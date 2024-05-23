@@ -1,0 +1,20 @@
+@use "../abstracts/colors" as c;
+@use "../abstracts/fonts" as t;
+
+.pagination {
+  margin: 2.5em 0 !important;
+  li {
+    .page-link {
+      color: c.$brand--primary;
+      font-size: 2rem;
+    }
+    &.active {
+      .page-link {
+        z-index: 3;
+        color: c.$white;
+        background-color: c.$brand--primary;
+        border-color: c.$brand--primary;
+      }
+    }
+  }
+}
